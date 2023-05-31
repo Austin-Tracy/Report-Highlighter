@@ -1,0 +1,71 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:WpfApp1="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="900">
+
+    <TabControl>
+        <TabItem x:Name="Customers" Header="Customers" Opacity="0.995" AutomationProperties.Name="Customers">
+            <Grid Background="#FFE5E5E5" Margin="6,0,-6,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="16*"/>
+                    <ColumnDefinition Width="133*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="Quote_ID" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Quote No" VerticalAlignment="Top" Width="67" Height="24"/>
+                <ComboBox x:Name="QuoteFor" HorizontalAlignment="Left" Margin="77,10,0,0" VerticalAlignment="Top" Width="106" Height="24" Grid.ColumnSpan="2" />
+                <TextBox HorizontalAlignment="Left" Margin="10,51,0,0" TextWrapping="Wrap" Text="Cust NO" VerticalAlignment="Top" Width="67"/>
+                <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="34,69,0,0" TextWrapping="Wrap" Text="Last" VerticalAlignment="Top" Width="96" Grid.Column="1"/>
+                <TextBox x:Name="Middle" HorizontalAlignment="Left" Margin="91,69,0,0" TextWrapping="Wrap" Text="Middle&#xA;" VerticalAlignment="Top" Width="39" Height="18" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="10,69,0,0" TextWrapping="Wrap" Text="First" VerticalAlignment="Top" Width="81"/>
+                <TextBox x:Name="Title" HorizontalAlignment="Left" Margin="10,87,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Width="216" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="Agency" HorizontalAlignment="Left" Margin="10,105,0,0" TextWrapping="Wrap" Text="Agency" VerticalAlignment="Top" Width="216" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="Address1" HorizontalAlignment="Left" Margin="10,123,0,0" TextWrapping="Wrap" Text="Address 1" VerticalAlignment="Top" Width="216" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="10,142,0,0" TextWrapping="Wrap" Text="Address 2" VerticalAlignment="Top" Width="147" Height="22" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="10,164,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" Width="99" Grid.ColumnSpan="2"/>
+                <ComboBox x:Name="Country" HorizontalAlignment="Left" Margin="61,142,0,0" VerticalAlignment="Top" Width="69" Height="22" Grid.Column="1" />
+                <TextBox x:Name="State" HorizontalAlignment="Left" Margin="13,164,0,0" TextWrapping="Wrap" Text="State" VerticalAlignment="Top" Width="53" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="66,164,0,0" TextWrapping="Wrap" Text="Zip" VerticalAlignment="Top" Width="64" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="10,182,0,0" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top" Width="124" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="38,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.865,0.394" Grid.Column="1"/>
+                <CheckBox x:Name="phoneOptOut" Content="Opt" HorizontalAlignment="Left" Margin="90,182,0,0" VerticalAlignment="Top" Height="18" Width="40" Grid.Column="1"/>
+                <TextBox x:Name="Cell" HorizontalAlignment="Left" Margin="10,200,0,0" TextWrapping="Wrap" Text="Cell" VerticalAlignment="Top" Width="125" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="Fax" HorizontalAlignment="Left" Margin="10,218,0,0" TextWrapping="Wrap" Text="Fax" VerticalAlignment="Top" Width="124" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="10,236,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="176" Grid.ColumnSpan="2"/>
+                <TextBox HorizontalAlignment="Left" Margin="39,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="51" Grid.Column="1"/>
+                <CheckBox Content="Opt" HorizontalAlignment="Left" Margin="90,200,0,0" VerticalAlignment="Top" Height="18" Width="40" Grid.Column="1"/>
+                <CheckBox Content="Opt" HorizontalAlignment="Left" Margin="90,219,0,0" VerticalAlignment="Top" Height="18" Width="40" Grid.Column="1"/>
+                <CheckBox Content="Opt" HorizontalAlignment="Left" Margin="90,237,0,0" VerticalAlignment="Top" Height="18" Width="40" RenderTransformOrigin="0.625,-0.051" Grid.Column="1"/>
+                <CheckBox x:Name="Cataloged" Content="Ctlg" HorizontalAlignment="Left" Margin="38,219,0,0" VerticalAlignment="Top" Height="18" Width="52" RenderTransformOrigin="0.5,0.56" Grid.Column="1"/>
+                <ComboBox x:Name="Vendor_ID" HorizontalAlignment="Left" Margin="145,54,0,0" VerticalAlignment="Top" Width="125" Height="22" AutomationProperties.Name="Vendor_ID" Grid.Column="1" />
+                <TextBox x:Name="VendorRep1" HorizontalAlignment="Left" Margin="145,76,0,0" TextWrapping="Wrap" Text="Vendor Rep 1" VerticalAlignment="Top" Width="125" AutomationProperties.Name="VendorRep1" Grid.Column="1"/>
+                <TextBox x:Name="VendorRep2" HorizontalAlignment="Left" Margin="145,94,0,0" TextWrapping="Wrap" Text="Vendor Rep 2" VerticalAlignment="Top" Width="125" AutomationProperties.Name="VendorRep2" Grid.Column="1"/>
+                <TextBox x:Name="VendorRep3" HorizontalAlignment="Left" Margin="145,112,0,0" TextWrapping="Wrap" Text="Vendor Rep 3" VerticalAlignment="Top" Width="125" AutomationProperties.Name="VendorRep3" Grid.Column="1"/>
+                <ComboBox x:Name="Reseller_ID"  HorizontalAlignment="Left" Margin="145,135,0,0" VerticalAlignment="Top" Width="125" Height="22" Grid.Column="1"/>
+                <TextBox HorizontalAlignment="Left" Margin="145,157,0,0" TextWrapping="Wrap" Text="Reseller Rep 1" VerticalAlignment="Top" Width="125" Grid.Column="1"/>
+                <TextBox x:Name="ResellerRep2" HorizontalAlignment="Left" Margin="145,175,0,0" TextWrapping="Wrap" Text="Reseller Rep 2" VerticalAlignment="Top" Width="125" Grid.Column="1"/>
+                <Label x:Name="Report_1" Grid.Column="1" Content="Report 1" WpfApp1:HighlightBehavior.Highlight="{Binding ReportFieldNames1}" HorizontalAlignment="Left" Margin="611,38,0,0" VerticalAlignment="Top" Height="28" Width="145"/>
+                <Label x:Name="Report_2" Grid.Column="1" Content="Report 2" WpfApp1:HighlightBehavior.Highlight="{Binding ReportFieldNames2}" HorizontalAlignment="Left" Margin="611,69,0,0" VerticalAlignment="Top" Height="28" Width="145"/>
+                <Grid Grid.ColumnSpan="2"/>
+                <ComboBox HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Width="88" Grid.ColumnSpan="2"/>
+                <ComboBox HorizontalAlignment="Left" Margin="10,267,0,0" VerticalAlignment="Top" Width="120" Grid.Column="1"/>
+                <WrapPanel Margin="0,51,653,207" Grid.ColumnSpan="2"/>
+                <ComboBox HorizontalAlignment="Left" Margin="148,200,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+                <ComboBox HorizontalAlignment="Left" Margin="148,222,0,0" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+                <TextBox x:Name="MainAgencyLevel3" HorizontalAlignment="Left" Margin="148,246,0,0" TextWrapping="Wrap" Text="Level 3" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+                <TextBox x:Name="MainAgencyLevel4" HorizontalAlignment="Left" Margin="148,264,0,0" TextWrapping="Wrap" Text="Level 4" VerticalAlignment="Top" Width="122" Grid.Column="1"/>
+            </Grid>
+        </TabItem>
+        <TabItem Header="Quotes">
+            <Grid Background="#FFE5E5E5"/>
+        </TabItem>
+        <TabItem Header="Orders">
+            <Grid Background="#FFE5E5E5"/>
+        </TabItem>
+        <TabItem Header="Partners">
+            <Grid Background="#FFE5E5E5"/>
+        </TabItem>
+    </TabControl>
+</Window>
