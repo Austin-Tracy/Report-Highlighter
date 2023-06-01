@@ -2,13 +2,6 @@
 
 This C# and XAML project, Report Highlighter, is a Windows Presentation Foundation (WPF) application. It highlights a set of fields that are associated with the report currently being hovered over.
 
-## Getting Started
-To run this project, you will need:
-
-- Microsoft Visual Studio (version 2017 or later)
-- .NET Framework (version 4.7.2 or later)
-Open the solution (.sln) file with Visual Studio and build the project (Build > Build Solution) before running it.
-
 ## Functionality
 The Report Highlighter application includes a MainWindow with the following features:
 
@@ -31,7 +24,7 @@ Two labels, Report_1 and Report_2, have been defined in the XAML code with their
 ```
 
 ## Future Work
-This project is a minimal example, some ideas to expansion this functionality.
+This project is a minimal example, some ideas to expand this functionality.
 
 - The class-level arrays of strings in MainWindow can be replaced with functions to fetch real data from a database or a file.
 - The HighlightBehavior class could be extended to support more UI controls.
