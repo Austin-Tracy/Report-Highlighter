@@ -1,6 +1,6 @@
 # Report Highlighter
 
-This C# and XAML project, Report Highlighter, is a Windows Presentation Foundation (WPF) application. It highlights the usage of custom UI behaviors and the manipulation of controls in a WPF application.
+This C# and XAML project, Report Highlighter, is a Windows Presentation Foundation (WPF) application. It highlights a set of fields that are associated with the report currently being hovered over.
 
 ## Getting Started
 To run this project, you will need:
@@ -30,9 +30,8 @@ Two labels, Report_1 and Report_2, have been defined in the XAML code with their
 ```
 
 ## Future Work
-This project is a minimal example, and there's potential for expansion based on your needs. For instance:
+This project is a minimal example, some ideas to expansion this functionality.
 
 - The class-level arrays of strings in MainWindow can be replaced with functions to fetch real data from a database or a file.
-- You may add more complex UI elements and apply HighlightBehavior to them.
 - The HighlightBehavior class could be extended to support more UI controls.
-- You may choose to add additional behaviors for other UI interactions.
+- Add additional behaviors to define interactions multiple elements.
