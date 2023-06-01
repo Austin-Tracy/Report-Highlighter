@@ -24,6 +24,7 @@ There are two main classes involved in this application:
 ## Example
 Two labels, Report_1 and Report_2, have been defined in the XAML code with their HighlightBehavior.Highlight properties bound to the ReportFieldNames1 and ReportFieldNames2 arrays, respectively. When the mouse enters and leaves their area, these labels will trigger a highlight effect on the fields defined in their associated string arrays.
 
+![](https://github.com/Austin-Tracy/ReportHighlighter/blob/main/Highlight.gif)
 ```xml
 <Label x:Name="Report_1" Grid.Column="1" Content="Report 1" WpfApp1:HighlightBehavior.Highlight="{Binding ReportFieldNames1}" HorizontalAlignment="Left" Margin="611,38,0,0" VerticalAlignment="Top" Height="28" Width="145"/>
 <Label x:Name="Report_2" Grid.Column="1" Content="Report 2" WpfApp1:HighlightBehavior.Highlight="{Binding ReportFieldNames2}" HorizontalAlignment="Left" Margin="611,69,0,0" VerticalAlignment="Top" Height="28" Width="145"/>
