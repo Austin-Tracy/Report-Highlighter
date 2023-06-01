@@ -29,3 +29,6 @@ This project is a minimal example, some ideas to expand this functionality.
 - The class-level arrays of strings in MainWindow can be replaced with functions to fetch real data from a database or a file.
 - The HighlightBehavior class could be extended to support more UI controls.
 - Add additional behaviors to define interactions multiple elements.
+
+## License
+This project is licensed under MIT License terms.
